@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Laporan Produksi</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; }
+        h1 { color: #2c3e50; }
+        h2 { color: #34495e; margin-top: 30px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+        th, td { border: 1px solid #bbb; padding: 8px; text-align: left; }
+        th { background-color: #ecf0f1; }
+        img { max-width: 100%; height: auto; margin-top: 10px; }
+        .footer { margin-top: 40px; font-size: 12px; color: #7f8c8d; }
+        @media print { h2 { page-break-after: avoid; } img { page-break-inside: avoid; } }
+    </style>
+</head>
+<body>
+    <h1>Laporan Produksi Harian</h1>
+    <p>Laporan ini dihasilkan secara otomatis oleh program Python.</p>
+
+    <h2>1. Tren Total Produksi Harian</h2>
+    <img src="../grafik/grafik_garis_tren.png" alt="Grafik Garis">
+
+    <h2>2. Total Produksi per Lini</h2>
+    <img src="../grafik/grafik_batang_lini.png" alt="Grafik Batang">
+
+    <h2>3. Sebaran Total Produksi per Operator</h2>
+    <img src="../grafik/grafik_sebar_operator.png" alt="Grafik Sebar">
+
+    <h2>4. Distribusi Jumlah Produksi</h2>
+    <img src="../grafik/histogram_jumlah.png" alt="Histogram">
+
+    <h2>5. Ringkasan Data</h2>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>liniproduksi</th>
+      <th>total_jumlah</th>
+      <th>rata_rata</th>
+      <th>maksimum</th>
+      <th>minimum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lini A</td>
+      <td>1575</td>
+      <td>175.000000</td>
+      <td>210</td>
+      <td>145</td>
+    </tr>
+    <tr>
+      <td>Lini B</td>
+      <td>1745</td>
+      <td>193.888889</td>
+      <td>220</td>
+      <td>165</td>
+    </tr>
+  </tbody>
+</table>
+
+    <div class="footer">
+        <p>Dibuat otomatis pada: 2026-11-15 19:07:17</p>
+    </div>
+</body>
+</html>
